@@ -35,13 +35,13 @@ end
 # get the word
 
 def decode_word(word)
-   @letters = word.split(' ')
-   @current_word = ''
-   @letters.each do |letter|
+  @letters = word.split
+  @current_word = ''
+  @letters.each do |letter|
     get_letter(letter)
     @current_word += get_letter(letter)
-    end
-    print "#{@current_word}"
+  end
+  print @current_word.to_s
 end
 
 # get the sentence
