@@ -26,3 +26,10 @@
   '-.--' => 'Y',
   '--..' => 'Z'
 }
+
+# get the individual letter
+def get_letter(letter)
+  @dictionary[letter]
+end
+
+# get the word
