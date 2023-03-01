@@ -43,3 +43,14 @@ def decode_word(word)
     end
     print "#{@current_word}"
 end
+
+# get the sentence
+def decode_sentence(sentence)
+  @words = sentence.split('  ')
+  @words.each do |word|
+    decode_word(word)
+    print ' '
+  end
+end
+
+decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
